@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Airtime Topup</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="contact-us-main">
+        {{if .Success}}
+          <div class="success-message">
+              <p>Your top-up is successful!</p>
+          </div>
+        {{else}}
+      <div class="contact-us-heading">
+        <h1>Topup Form</h1>
+      </div>
+      <div class="underliner"></div>
+
+      <form class="contact-form" action="/airtime.html" method="POST">
+        <input
+          class="contact-form-text"
+          type="text"
+          placeholder="your operator's id"
+          name="operatorid"
+        />
+        <input
+          class="contact-form-text"
+          type="text"
+          placeholder="your top-up amount (NGN)"
+          name="amount"
+        />
+        <input
+          class="contact-form-text"
+          type="text"
+          placeholder="your unique reference"
+          name="reference"
+        />
+        <input
+        class="contact-form-text"
+        type="text"
+        placeholder="recipient's phone number"
+        name="number"
+      />
+      <input
+      class="contact-form-text"
+      type="text"
+      placeholder="recipient's country code"
+      name="countrycode"
+    />
+    <input
+          class="contact-form-text"
+          type="Email"
+          placeholder="your email here"
+        />
+        <input class="contact-form-btn" type="submit" value="send" />
+      </form>
+      {{end}}
+    </div>
+  </body>
+</html>
