@@ -1,6 +1,6 @@
 # Reloadly Airtime Form Golang
 
-Reloadly's Airtime Form is a web application that enables web developers building with Go to quickly create a working airtime top-up application. You can get started in minutes if you have Go 1.15+ installed on your machine.
+Reloadly's Airtime Form is a web application that enables web developers building with Go to quickly create a working airtime top-up application. You can get started in minutes if you have Go 1.16+ installed on your machine.
 
 <br>
 
